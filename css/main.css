@@ -7,8 +7,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font: 30px bold;
-	text-align: right
+	font: 60px bold;
+	font-family: 'Lobster', cursive;
+	text-align: right;
+	margin: 20px 0;
 }
 
 h3, h4{
@@ -34,8 +36,8 @@ img {
 }
 
 .logo {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 150px;
+	max-height: 150px;
 	margin: 10px;
 	color:red;
 }
@@ -69,6 +71,7 @@ img {
 
 .secondary-text {
 	color: lightgrey;
+	text-align: right;
 }
 
 @media screen and (min-width: 960px) {
@@ -95,13 +98,37 @@ img {
 		width: 30%;
 		padding: 10px 0;
 	}
-	
-	h3 {
-		font-size: 16px;
-	}
 
 	.nav-info {
 		width:60%;
 		padding-left:10%;
+	}
+
+	.logo {
+		width: 120px;
+		height: 120px;
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.logo {
+		width: 90px;
+		height: 90px;
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+	h4 {
+		margin: 5px 0;
+	}
+	h3 {
+		font-size: 16px;
 	}
 }
